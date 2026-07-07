@@ -1,0 +1,479 @@
+<html class="scroll-smooth" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "surface-tint": "#0c6e00",
+                            "on-surface": "#1b1c1c",
+                            "primary-fixed": "#78ff5d",
+                            "surface-dim": "#dbdad9",
+                            "secondary-container": "#b7f2a6",
+                            "error": "#ba1a1a",
+                            "on-error": "#ffffff",
+                            "surface-container-lowest": "#ffffff",
+                            "inverse-primary": "#4de335",
+                            "on-primary-fixed-variant": "#075300",
+                            "error-container": "#ffdad6",
+                            "tertiary-fixed": "#d6e7d4",
+                            "on-error-container": "#93000a",
+                            "primary": "#0c6e00",
+                            "mist-gray": "#F5F7F5",
+                            "water-azure": "#4BA3E1",
+                            "surface-container-high": "#e9e8e7",
+                            "secondary-fixed": "#b7f2a6",
+                            "on-tertiary-fixed-variant": "#3c4a3c",
+                            "on-tertiary-fixed": "#111f13",
+                            "on-primary-fixed": "#012200",
+                            "outline-variant": "#bccbb2",
+                            "inverse-surface": "#303031",
+                            "surface": "#fbf9f9",
+                            "primary-fixed-dim": "#4de335",
+                            "inverse-on-surface": "#f2f0f0",
+                            "background": "#fbf9f9",
+                            "surface-container-low": "#f5f3f3",
+                            "on-tertiary-container": "#465546",
+                            "tertiary-fixed-dim": "#bacbb8",
+                            "secondary-fixed-dim": "#9cd58c",
+                            "tertiary": "#536253",
+                            "secondary": "#376a2d",
+                            "on-secondary": "#ffffff",
+                            "primary-container": "#4be133",
+                            "on-background": "#1b1c1c",
+                            "on-primary-container": "#095f00",
+                            "on-tertiary": "#ffffff",
+                            "surface-container": "#efeded",
+                            "carbon-slate": "#333333",
+                            "on-surface-variant": "#3d4a38",
+                            "surface-bright": "#fbf9f9",
+                            "outline": "#6d7b66",
+                            "surface-container-highest": "#e4e2e2",
+                            "on-primary": "#ffffff",
+                            "surface-variant": "#e4e2e2",
+                            "leaf-vibrant": "#4BE133",
+                            "tertiary-container": "#b9c9b6",
+                            "on-secondary-fixed-variant": "#1e5118",
+                            "on-secondary-fixed": "#002200",
+                            "on-secondary-container": "#3d7033"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "margin-mobile": "20px",
+                            "unit": "8px",
+                            "margin-desktop": "48px",
+                            "gutter": "16px",
+                            "container-max": "1200px"
+                        },
+                        "fontFamily": {
+                            "headline-lg-mobile": ["IBM Plex Sans"],
+                            "body-md": ["IBM Plex Sans"],
+                            "data-display": ["IBM Plex Sans"],
+                            "label-caps": ["IBM Plex Sans"],
+                            "headline-md": ["IBM Plex Sans"],
+                            "body-lg": ["IBM Plex Sans"],
+                            "headline-lg": ["IBM Plex Sans"]
+                        },
+                        "fontSize": {
+                            "headline-lg-mobile": ["32px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "data-display": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                            "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    </script>
+<style>
+        body { font-family: 'IBM Plex Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-mist-gray text-on-surface selection:bg-leaf-vibrant/30 min-h-screen">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-surface-container">
+<div class="max-w-[1200px] mx-auto px-5 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img alt="GF 녹색미래 Logo" class="h-8" src="images/로고.png"/>
+</div>
+<div class="flex gap-md items-center">
+<a class= "ml-sm bg-primary px-4 py-2 rounded-lg font-lavel-md text-label-md hover:opacity-90 transition-opacity inline-block" style="color: #ffffff" href="plastic.html">플라스틱계산기</a>
+</div>
+</div>
+</header>
+<main class="max-w-[600px] mx-auto px-5 py-8 space-y-8 pb-32">
+<header class="text-center space-y-3">
+<h1 class="font-headline-lg-mobile text-primary font-bold">녹색미래의 수돗물 계산기를 통해</h1>
+<p class="text-on-surface-variant text-sm px-4">수돗물과 먹는 물을 직접 생각하며 계산하고 얼마나 지구를 사랑하는지 알아봐요!</p>
+</header>
+<section class="bg-white rounded-3xl p-6 space-y-6 shadow-sm border border-surface-container">
+<div class="flex items-center gap-3 border-b border-surface-container pb-4">
+<span class="material-symbols-outlined text-water-azure">water_drop</span>
+<h2 class="font-headline-md text-xl text-on-surface">수돗물 계산을 해봐요</h2>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<!-- 1. Bathroom -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <!-- 제목과 원형 이미지를 한 줄로 묶는 flex 컨테이너 -->
+  <div class="flex items-center gap-3 mb-4">
+    <img alt="Toilet" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/화장실.jpg">
+    <label class="text-lg font-bold text-primary">1.화장실 사용횟수 🧻</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div>
+      <p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p>
+      <input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container focus:ring-primary focus:border-primary bg-white text-on-surface" id="tap1" placeholder="회" type="number" value="0">
+    </div>
+    <div>
+      <p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용시간(분)</p>
+      <input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container focus:ring-primary focus:border-primary bg-white text-on-surface" id="tap2" placeholder="분" type="number" value="0">
+    </div>
+  </div>
+
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs">
+      <span class="opacity-60 text-on-surface-variant">예상 사용량:</span>
+      <input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water1" readonly="" type="text" value="0 L">
+    </div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1">
+      <span class="text-[10px] font-bold text-primary">점수:</span>
+      <input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score1" readonly="" type="text" value="0">
+    </div>
+  </div>
+</div>
+<!-- 2. Water Saving Bathroom -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="화장실 절수기" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/화장실 절수기.tmp"/>
+    <label class="text-lg font-bold text-primary">2. 화장실 절수기 (Water Saving)</label>
+  </div>
+  
+  <p class="text-[11px] text-on-surface-variant/60 italic leading-tight mb-4">화장실에서 사용하는 물의 양을 줄이기 위해 변기나 수조에 설치하는 기기</p>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div>
+      <p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p>
+      <input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container focus:ring-primary bg-white text-on-surface" id="tap3" placeholder="회" type="number" value="0"/>
+    </div>
+    <div>
+      <p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용시간(분)</p>
+      <input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container focus:ring-primary bg-white text-on-surface" id="tap4" placeholder="분" type="number" value="0"/>
+    </div>
+  </div>
+
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs">
+      <span class="opacity-60 text-on-surface-variant">예상 사용량:</span>
+      <input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water2" readonly="" type="text" value="0 L"/>
+    </div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1">
+      <span class="text-[10px] font-bold text-primary">점수:</span>
+      <input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score2" readonly="" type="text" value="0"/>
+    </div>
+  </div>
+</div>
+<!-- 3. Hand Washing -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="Hand Washing" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/손씻기.jpg"/>
+    <label class="text-lg font-bold text-primary">3. 손씻기 🧼</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap5" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용시간(분)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap6" placeholder="분" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water3" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score3" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+<!-- 4. Using Basin -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="Hand Washing Basin" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/손씻기 세숫대야.tmp"/>
+    <label class="text-lg font-bold text-primary">4. 손씻기 세숫대야 🧺</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap7" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용량(l)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap8" placeholder="리터" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water4" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score4" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+<!-- 5. Shower -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="Shower" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/목욕하기.jpg"/>
+    <label class="text-lg font-bold text-primary">5. 목욕하기 🚿</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap9" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용시간(분)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap10" placeholder="분" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water5" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score5" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+<!-- 6. Water Saving Shower -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="샤워기 절수기" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/샤워기 절수기.tmp"/>
+    <label class="text-lg font-bold text-primary">6. 샤워 절수기 (Water Saving)</label>
+  </div>
+  
+  <p class="text-[11px] text-on-surface-variant/60 italic leading-tight">샤워기 헤드에 설치하여 적은 물로도 강한 수압을 만들어 절약하는 기기</p>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap11" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용시간(분)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap12" placeholder="분" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water6" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score6" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+<!-- 7. Using Cup -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="Using Cup" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/양치 컵 사용.tmp"/>
+    <label class="text-lg font-bold text-primary">7. 양치 컵 사용 (Using Cup) ⭕</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap13" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용량(180ml 컵 기준)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap14" placeholder="횟수" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water7" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score7" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+<!-- 8. No Cup-->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="No Cup" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/양치 컵 미사용.tmp"/>
+    <label class="text-lg font-bold text-primary">8. 양치 컵 미사용 (No Cup) ❌</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap15" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용시간(분)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap16" placeholder="분" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water8" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score8" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+<!-- 9. Dishwashing -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="Dishwashing" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/설거지.tmp"/>
+    <label class="text-lg font-bold text-primary">9. 설거지 (Dishwashing) 🥢🍴</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap17" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용시간(분)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap18" placeholder="분" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water9" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score9" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+<!-- 10. Using Tub -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="Dishwashing Tub" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/설거지 통 사용.tmp"/>
+    <label class="text-lg font-bold text-primary">10. 설거지 통 이용 (Using Tub)</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap19" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용량(l)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap20" placeholder="리터" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water10" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score10" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+<!-- 11. Watering Plants -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="Watering Plants" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/반려식물.tmp"/>
+    <label class="text-lg font-bold text-primary">11. 반려식물 물주기 🌿</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap21" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용량(180ml 컵 기준)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap22" placeholder="횟수" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water11" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score11" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+<!-- 12. Laundry -->
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+  <div class="flex items-center gap-3">
+    <img alt="Laundry" class="w-10 h-10 rounded-full object-cover shadow-sm" src="images/세탁.jpg"/>
+    <label class="text-lg font-bold text-primary">12. 세탁 (Laundry) 👕</label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 횟수</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap23" placeholder="회" type="number" value="0"/></div>
+    <div><p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">사용시간(분)</p><input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="tap24" placeholder="분" type="number" value="0"/></div>
+  </div>
+  
+  <div class="flex justify-between items-center pt-2 border-t border-surface-container">
+    <div class="text-xs"><span class="opacity-60 text-on-surface-variant">예상 사용량:</span><input class="bg-transparent border-none font-bold text-water-azure w-24 p-0 ml-1 focus:ring-0" id="water12" readonly="" type="text" value="0 L"/></div>
+    <div class="bg-leaf-vibrant/10 px-3 py-1 rounded-full flex items-center gap-1"><span class="text-[10px] font-bold text-primary">점수:</span><input class="bg-transparent border-none p-0 w-8 text-xs font-bold text-primary text-center focus:ring-0" id="score12" readonly="" type="text" value="0"/></div>
+  </div>
+</div>
+</div>
+</section>
+<section class="bg-white rounded-3xl p-6 space-y-6 shadow-sm border border-surface-container">
+<div class="flex items-center gap-3 border-b border-surface-container pb-4">
+<span class="material-symbols-outlined text-leaf-vibrant">local_drink</span>
+<h2 class="font-headline-md text-xl text-on-surface">먹는 물이 탄소발생으로?</h2>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+<label class="text-sm font-bold text-primary">1. 수돗물 (Tap Water)</label>
+<div class="grid grid-cols-1 gap-3">
+<div>
+<p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 마시는 양 (180ml 종이컵 기준)</p>
+<input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="cup1" placeholder="컵" type="number" value="0"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-2 border-t border-surface-container text-xs">
+<div><p class="opacity-60 mb-1 text-on-surface-variant">1일 탄소발생량:</p><input class="bg-transparent border-none font-bold text-carbon-slate w-full p-0 focus:ring-0" id="co2-1" readonly="" type="text" value="0 g"/></div>
+<div><p class="opacity-60 mb-1 text-on-surface-variant">1년 탄소발생량:</p><input class="bg-transparent border-none font-bold text-leaf-vibrant w-full p-0 focus:ring-0" id="co2score1" readonly="" type="text" value="0 kg"/></div>
+</div>
+</div>
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+<label class="text-sm font-bold text-primary">2. 페트병물 (Bottled Water)</label>
+<div class="grid grid-cols-1 gap-3">
+<div>
+<p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 마시는 양 (500ml 페트병 기준)</p>
+<input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="cup2" placeholder="병" type="number" value="0"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-2 border-t border-surface-container text-xs">
+<div><p class="opacity-60 mb-1 text-on-surface-variant">1일 탄소발생량:</p><input class="bg-transparent border-none font-bold text-carbon-slate w-full p-0 focus:ring-0" id="co2-2" readonly="" type="text" value="0 g"/></div>
+<div><p class="opacity-60 mb-1 text-on-surface-variant">1년 탄소발생량:</p><input class="bg-transparent border-none font-bold text-leaf-vibrant w-full p-0 focus:ring-0" id="co2score2" readonly="" type="text" value="0 kg"/></div>
+</div>
+</div>
+<div class="space-y-4 p-4 bg-surface-container-low rounded-2xl border border-surface-container">
+<label class="text-sm font-bold text-primary">3. 정수기 (Water Purifier)</label>
+<div class="grid grid-cols-1 gap-3">
+<div>
+<p class="text-[10px] uppercase font-bold opacity-60 mb-1 text-on-surface-variant">1일 마시는 양 (180ml 종이컵 기준)</p>
+<input class="w-full rounded-xl px-4 py-2 text-sm border-surface-container bg-white text-on-surface" id="cup3" placeholder="컵" type="number" value="0"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-2 border-t border-surface-container text-xs">
+<div><p class="opacity-60 mb-1 text-on-surface-variant">1일 탄소발생량:</p><input class="bg-transparent border-none font-bold text-carbon-slate w-full p-0 focus:ring-0" id="co2-3" readonly="" type="text" value="0 g"/></div>
+<div class=""><p class="opacity-60 mb-1 text-on-surface-variant">1년 탄소발생량:</p><input class="bg-transparent border-none font-bold text-leaf-vibrant w-full p-0 focus:ring-0" id="co2score3" readonly="" type="text" value="0 kg"/></div>
+</div>
+</div>
+</div>
+</section>
+<button
+    onclick="multi(); multi2();"
+    class="group relative w-full overflow-hidden rounded-2xl bg-primary px-6 py-5 font-bold text-white shadow-lg transition-all duration-300 active:scale-95"
+>
+    <!-- Hover 애니메이션 -->
+    <span class="absolute inset-0 w-0 bg-primary/90 transition-all duration-300 group-hover:w-full"></span>
+
+    <!-- 내용 -->
+    <span class="relative z-10 flex items-center justify-center gap-3">
+        <span class="material-symbols-outlined">analytics</span>
+        사용량 계산하기
+    </span>
+</button>
+<section class="bg-white rounded-3xl p-6 space-y-8 shadow-sm border border-surface-container">
+<h2 class="font-headline-md text-xl text-center text-on-surface">결과</h2>
+<div class="grid grid-cols-1 gap-6">
+<div class="flex items-center gap-4 bg-water-azure/5 p-4 rounded-2xl border border-water-azure/10">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-water-azure">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">총 물 사용량</p>
+<input class="text-2xl font-bold text-primary bg-transparent border-none p-0 w-full focus:ring-0" id="sum" readonly="" type="text" value="0 L"/>
+<p class="text-xs text-on-surface-variant">환경 스코어: <input class="bg-transparent border-none p-0 w-12 font-bold focus:ring-0" id="sum1" readonly="" type="text" value="0"/></p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-carbon-slate/5 p-4 rounded-2xl border border-carbon-slate/10">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-carbon-slate">
+<span class="material-symbols-outlined">co2</span>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">일일 탄소발생량</p>
+<input class="text-2xl font-bold text-primary bg-transparent border-none p-0 w-full focus:ring-0" id="sum2" readonly="" type="text" value="0 g"/>
+</div>
+</div>
+<div class="bg-leaf-vibrant/10 rounded-3xl p-8 flex flex-col items-center text-center space-y-4 border border-leaf-vibrant/20">
+<div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg text-leaf-vibrant">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">forest</span>
+</div>
+<div class="space-y-1 w-full">
+<h3 class="font-headline-md text-lg text-primary">당신의 나무그루</h3>
+<input class="text-center font-extrabold text-3xl bg-transparent border-none p-0 text-on-surface w-full focus:ring-0" id="sum3" readonly="" type="text" value="0 그루"/>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed max-w-[200px]">탄소를 줄이는데 필요한 나무에요.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-container rounded-3xl p-6 space-y-4">
+<div class="flex items-center gap-2 border-b border-surface-container pb-3">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<h3 class="font-headline-md text-base text-on-surface">점수별 나의 지구사랑은?</h3>
+</div>
+<div class="space-y-2 text-xs text-on-surface">
+<div class="flex justify-between items-center p-3 rounded-xl border border-surface-container" id="cat1"><span>1~20점</span><span class="font-bold">진짜 지구를 사랑하는 지구인</span></div>
+<div class="flex justify-between items-center p-3 rounded-xl border border-surface-container" id="cat2"><span>20~40점</span><span class="font-bold">지구를 위해 노력이 필요한 지구인</span></div>
+<div class="flex justify-between items-center p-3 rounded-xl border border-surface-container" id="cat3"><span>40~60점</span><span class="font-bold text-right">지구를 위해 많은 노력과 사랑이 필요한 지구인</span></div>
+<div class="flex justify-between items-center p-3 rounded-xl border border-surface-container" id="cat4"><span>60~80점</span><span class="font-bold">지구를 아프게 만드는 지구인</span></div>
+<div class="flex justify-between items-center p-3 rounded-xl border border-surface-container" id="cat5"><span>80~100점</span><span class="font-bold">지구가 싫어하는 지구인</span></div>
+</div>
+<p class="text-[10px] text-on-surface-variant/60 text-center italic mt-2">(출처. 2020년 환경부 상수도 통계자료 / 한국YMCA전국연맹)</p>
+</div>
+</div>
+<div class="p-4 bg-secondary-container/30 rounded-2xl border border-secondary/10 flex gap-3">
+<span class="material-symbols-outlined text-primary">lightbulb</span>
+<p class="text-xs text-primary leading-relaxed"><span class="font-bold">알고 계셨나요?</span> 샤워 시간을 단 2분만 줄여도 묘목을 3개월 동안 키울 수 있는 양의 물을 절약할 수 있습니다!</p>
+</div>
+</section>
+</main>
+<script src="main.js"></script>
+</body></html>
